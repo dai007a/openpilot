@@ -75,6 +75,16 @@ LateralPanel::LateralPanel(SettingsWindowSP *parent) : QFrame(parent) {
 
   list->addItem(horizontal_line());
 
+  // Pause Lateral on Steering Override
+  overridePauseLateralToggle = new ParamControl(
+    "PauseLateralOnOverride",
+    tr("Pause Lateral Control on Steering Override"),
+    tr("When enabled, lateral control will temporarily pause while the driver is applying steering torque (steering override)."),
+    "");
+  list->addItem(overridePauseLateralToggle);
+
+  list->addItem(horizontal_line());
+
   // Neural Network Lateral Control
   nnlcToggle = new NeuralNetworkLateralControl();
   list->addItem(nnlcToggle);
@@ -90,7 +100,7 @@ LateralPanel::LateralPanel(SettingsWindowSP *parent) : QFrame(parent) {
   });
 
   toggleOffroadOnly = {
-    madsToggle, nnlcToggle,
+  madsToggle, nnlcToggle, overridePauseLateralToggle,
   };
   QObject::connect(uiState(), &UIState::offroadTransition, this, &LateralPanel::updateToggles);
 
