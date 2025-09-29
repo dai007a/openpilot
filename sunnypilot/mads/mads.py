@@ -61,6 +61,7 @@ class ModularAssistiveDrivingSystem:
     self.unified_engagement_mode = self.params.get_bool("MadsUnifiedEngagementMode")
 
   def pedal_pressed_non_gas_pressed(self, CS: structs.CarState) -> bool:
+    # ignore `pedalPressed` events caused by gas presses
     if self.events.has(EventName.pedalPressed) and not (CS.gasPressed and not self.selfdrive.CS_prev.gasPressed and self.disengage_on_accelerator):
       return True
 
@@ -170,15 +171,16 @@ class ModularAssistiveDrivingSystem:
       if self.selfdrive.CS_prev.cruiseState.available:
         self.events_sp.add(EventNameSP.lkasDisable)
 
-    if self.steering_mode_on_brake == MadsSteeringModeOnBrake.DISENGAGE:
-      if self.pedal_pressed_non_gas_pressed(CS):
-        if self.enabled:
-          self.events_sp.add(EventNameSP.lkasDisable)
-        else:
-          # block lkasEnable if being sent, then send pedalPressedAlertOnly event
-          if self.events_sp.contains(EventNameSP.lkasEnable):
-            self.events_sp.remove(EventNameSP.lkasEnable)
-            self.events_sp.add(EventNameSP.pedalPressedAlertOnly)
+    both_pedals_pressed = CS.gasPressed and CS.brakePressed #todo add test and replicate in panda safety
+    if both_pedals_pressed or (self.steering_mode_on_brake == MadsSteeringModeOnBrake.DISENGAGE
+                               and self.pedal_pressed_non_gas_pressed(CS)):
+      if self.enabled:
+        self.events_sp.add(EventNameSP.lkasDisable)
+      else:
+        # block lkasEnable if being sent, then send pedalPressedAlertOnly event
+        if self.events_sp.contains(EventNameSP.lkasEnable):
+          self.events_sp.remove(EventNameSP.lkasEnable)
+          self.events_sp.add(EventNameSP.pedalPressedAlertOnly)
 
     if self.should_silent_lkas_enable(CS):
       if self.state_machine.state == State.paused:
