@@ -810,6 +810,14 @@ Firehose Mode allows you to maximize your training data uploads to improve openp
         <translation>使用视觉路径预测来估算通过前方弯道时的合适车速。</translation>
     </message>
     <message>
+        <source>Smart Cruise Control - Map</source>
+        <translation>弯道地图速度控制(SCC-M)</translation>
+    </message>
+    <message>
+        <source>Use map data to estimate the appropriate speed to drive through turns ahead.</source>
+        <translation>利用地图数据预测前方弯道并估算合适的通过车速。</translation>
+    </message>
+    <message>
         <source>Custom ACC Speed Increments</source>
         <translation>自定义 ACC 车速调节步长</translation>
     </message>
@@ -828,6 +836,32 @@ Firehose Mode allows you to maximize your training data uploads to improve openp
     <message>
         <source>Start the vehicle to check vehicle compatibility.</source>
         <translation>请启动车辆以检查兼容性。</translation>
+    </message>
+</context>
+<context>
+    <name>SpeedLimitSettings</name>
+    <message>
+        <source>Back</source>
+        <translation>返回</translation>
+    </message>
+    <message>
+        <source>Speed Limit</source>
+        <translation>速度限制</translation>
+    </message>
+    <message>
+        <source>Speed Limit Offset</source>
+        <translation>速度限制偏移</translation>
+    </message>
+    <message>
+        <source>Customize Source</source>
+        <translation>自定义来源</translation>
+    </message>
+</context>
+<context>
+    <name>SpeedLimitPolicy</name>
+    <message>
+        <source>Speed Limit Source</source>
+        <translation>速度限制来源</translation>
     </message>
 </context>
 <context>
@@ -2419,6 +2453,14 @@ Warning: You are on a metered connection!</source>
     <message>
         <source>Show a timer on the HUD when the car is at a standstill.</source>
         <translation>当车辆停止时，在行车界面上显示一个计时器记录停车时间。</translation>
+    </message>
+    <message>
+        <source>Display Road Name</source>
+        <translation>显示道路名称</translation>
+    </message>
+    <message>
+        <source>Displays the name of the road the car is traveling on. The OpenStreetMap database of the location must be downloaded from the OSM panel to fetch the road name.</source>
+        <translation>显示车辆当前行驶的道路名称。需从OSM面板下载该地区的OpenStreetMap数据库以获取道路名称信息。</translation>
     </message>
     <message>
         <source>Off</source>
