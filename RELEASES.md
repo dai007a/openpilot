@@ -1,3 +1,10 @@
+Version 0.10.1 (2025-10-01)
+========================
+* modeld: 为计划索引计算添加车道线辅助（ #1240 ）
+
+
+
+
 Version 0.10.1 (2025-09-08)
 ========================
 * Record driving feedback using LKAS button
