@@ -11,8 +11,7 @@ ButtonEvent = car.CarState.ButtonEvent
 ButtonType = car.CarState.ButtonEvent.Type
 
 
-# TODO: test pcmCruise and pcmCruiseSpeed
-@parameterized_class(('pcm_cruise', 'pcm_cruise_speed'), [(False, True)])
+@parameterized_class(('pcm_cruise',), [(False,)])
 class TestCustomAccIncrements(TestVCruiseHelper):
   def setup_method(self):
     TestVCruiseHelper.setup_method(self)
