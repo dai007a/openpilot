@@ -786,6 +786,14 @@ Firehose Mode allows you to maximize your training data uploads to improve openp
 <context>
     <name>LongitudinalPanel</name>
     <message>
+        <source>Smart Cruise Control - Vision</source>
+        <translation>弯道视觉速度控制(SCC-V)</translation>
+    </message>
+    <message>
+        <source>Use vision path predictions to estimate the appropriate speed to drive through turns ahead.</source>
+        <translation>使用视觉路径预测来估算通过前方弯道时的合适车速。</translation>
+    </message>
+    <message>
         <source>Custom ACC Speed Increments</source>
         <translation>自定义 ACC 车速调节步长</translation>
     </message>
@@ -2408,6 +2416,14 @@ Warning: You are on a metered connection!</source>
     <message>
         <source>affect driving in any way.</source>
         <translation>影响其他任何功能。</translation>
+    </message>
+    <message>
+        <source>Enable Standstill Timer</source>
+        <translation>启用停车计时器</translation>
+    </message>
+    <message>
+        <source>Show a timer on the HUD when the car is at a standstill.</source>
+        <translation>当车辆停止时，在行车界面上显示一个计时器记录停车时间。</translation>
     </message>
     <message>
         <source>Off</source>

@@ -33,4 +33,5 @@ private:
   ParamControlSP *vibePersonalityControl;
   ParamControlSP *vibeAccelPersonalityControl;
   ParamControlSP *vibeFollowPersonalityControl;
+  ParamControl *SmartCruiseControlVision;
 };
