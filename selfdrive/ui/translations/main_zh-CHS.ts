@@ -794,6 +794,14 @@ Firehose Mode allows you to maximize your training data uploads to improve openp
 <context>
     <name>LongitudinalPanel</name>
     <message>
+        <source>Intelligent Cruise Button Management (ICBM) (Alpha)</source>
+        <translation>智能巡航按键管理 (ICBM) (Alpha)</translation>
+    </message>
+    <message>
+        <source>When enabled, sunnypilot will attempt to manage the built-in cruise control buttons by emulating button presses for limited longitudinal control.</source>
+        <translation>启用后，sunnypilot将通过模拟按键操作来管理原车巡航控制按键，实现有限的纵向控制功能。</translation>
+    </message>
+    <message>
         <source>Smart Cruise Control - Vision</source>
         <translation>弯道视觉速度控制(SCC-V)</translation>
     </message>
