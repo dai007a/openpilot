@@ -795,11 +795,11 @@ Firehose Mode allows you to maximize your training data uploads to improve openp
     <name>LongitudinalPanel</name>
     <message>
         <source>Smart Cruise Control - Vision</source>
-        <translation>弯道视觉速度控制</translation>
+        <translation>弯道视觉速度控制(SCC-V)</translation>
     </message>
     <message>
         <source>Use vision path predictions to estimate the appropriate speed to drive through turns ahead.</source>
-        <translation>使用视觉路径预测来估算通过前方转弯时的合适车速。</translation>
+        <translation>使用视觉路径预测来估算通过前方弯道时的合适车速。</translation>
     </message>
     <message>
         <source>Custom ACC Speed Increments</source>
