@@ -1764,6 +1764,10 @@ Warning: You are on a metered connection!</source>
         <translation>视觉</translation>
     </message>
     <message>
+        <source>Display</source>
+        <translation>屏幕设置</translation>
+    </message>
+    <message>
         <source>OSM</source>
         <translation>OSM地图</translation>
     </message>
@@ -2463,6 +2467,30 @@ Warning: You are on a metered connection!</source>
         <translation>显示车辆当前行驶的道路名称。需从OSM面板下载该地区的OpenStreetMap数据库以获取道路名称信息。</translation>
     </message>
     <message>
+        <source>Green Traffic Light Alert (Beta)</source>
+        <translation>绿灯提示 (Beta)</translation>
+    </message>
+    <message>
+        <source>A chime and on-screen alert will play when the traffic light you are waiting for turns green and you have no vehicle in front of you.</source>
+        <translation>当您等待的交通信号灯变绿且前方无车辆时，将会播放提示音并显示屏幕提醒。</translation>
+    </message>
+    <message>
+        <source>Note: This chime is only designed as a notification. It is the driver's responsibility to observe their environment and make decisions accordingly.</source>
+        <translation>注意：此提示音仅作为通知用途。驾驶员有责任观察周围环境并做出相应决策。</translation>
+    </message>
+    <message>
+        <source>Lead Departure Alert (Beta)</source>
+        <translation>前车起步提示 (Beta)</translation>
+    </message>
+    <message>
+        <source>A chime and on-screen alert will play when you are stopped, and the vehicle in front of you start moving.</source>
+        <translation>当您处于停车状态，且前方车辆开始移动时，将会播放提示音并显示屏幕提醒。</translation>
+    </message>
+    <message>
+        <source>Note: This chime is only designed as a notification. It is the driver's responsibility to observe their environment and make decisions accordingly.</source>
+        <translation>注意：此提示音仅作为通知用途。驾驶员有责任观察周围环境并做出相应决策。</translation>
+    </message>
+    <message>
         <source>Off</source>
         <translation>关闭</translation>
     </message>
@@ -2489,6 +2517,17 @@ Warning: You are on a metered connection!</source>
     <message>
         <source>Display useful metrics below the chevron that tracks the lead car (only applicable to cars with openpilot longitudinal control).</source>
         <translation>在追踪车辆下方显示数据（仅适用于带有openpilot纵向控制的汽车）。</translation>
+    </message>
+</context>
+<context>
+    <name>DisplayPanel</name>
+    <message>
+        <source>Driving Screen Off: Non-Critical Events</source>
+        <translation>驾驶时关闭屏幕：非关键事件</translation>
+    </message>
+    <message>
+        <source>Turn off device screen or reduce brightness after driving starts. It automatically brightens again when screen is touched or a critical event occurs.</source>
+        <translation>驾驶开始后关闭设备屏幕或降低亮度。触控屏幕或发生关键事件时将自动恢复亮度。</translation>
     </message>
 </context>
 <context>
