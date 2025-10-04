@@ -856,6 +856,54 @@ Firehose Mode allows you to maximize your training data uploads to improve openp
         <source>Customize Source</source>
         <translation>自定义来源</translation>
     </message>
+    <message>
+        <source>⦿ None: No Offset</source>
+        <translation>⦿ None(无)：不设置偏移量</translation>
+    </message>
+    <message>
+        <source>⦿ Fixed: Adds a fixed offset [Speed Limit + Offset]</source>
+        <translation>⦿ Fixed(固定值)：添加固定偏移量 [限速值 + 偏移量]</translation>
+    </message>
+    <message>
+        <source>⦿ Percent: Adds a percent offset [Speed Limit + (Offset % Speed Limit)]</source>
+        <translation>⦿ Percent(百分比)：添加百分比偏移量 [限速值 + (偏移量 % × 限速值)]</translation>
+    </message>
+    <message>
+        <source>⦿ Off: Disables the Speed Limit functions.</source>
+        <translation>⦿ Off(关闭)：停用限速功能</translation>
+    </message>
+    <message>
+        <source>⦿ Information: Displays the current road's speed limit.</source>
+        <translation>⦿ Information(信息提示)：显示当前道路限速</translation>
+    </message>
+    <message>
+        <source>⦿ Warning: Provides a warning when exceeding the current road's speed limit.</source>
+        <translation>⦿ Warning(超速警告)：超过当前道路限速时发出警告</translation>
+    </message>
+    <message>
+        <source>⦿ Assist: Adjusts the vehicle's cruise speed based on the current road's speed limit when operating the +/- buttons.</source>
+        <translation>⦿ Assist(辅助调节)：操作+/-按钮时，根据当前道路限速自动调整巡航车速</translation>
+    </message>
+    <message>
+        <source>⦿ Car Only: Use Speed Limit data only from Car</source>
+        <translation>⦿ Car Only(仅车辆)：仅使用车辆提供的限速数据</translation>
+    </message>
+    <message>
+        <source>⦿ Map Only: Use Speed Limit data only from OpenStreetMaps</source>
+        <translation>⦿ Map Only(仅地图)：仅使用OpenStreetMaps提供的限速数据</translation>
+    </message>
+    <message>
+        <source>⦿ Car First: Use Speed Limit data from Car if available, else use from OpenStreetMaps</source>
+        <translation>⦿ Car First(车辆优先)：优先使用车辆限速数据，不可用时采用OpenStreetMaps数据</translation>
+    </message>
+    <message>
+        <source>⦿ Map First: Use Speed Limit data from OpenStreetMaps if available, else use from Car</source>
+        <translation>⦿ Map First(地图优先)：优先使用OpenStreetMaps限速数据，不可用时采用车辆数据</translation>
+    </message>
+    <message>
+        <source>⦿ Combined: Use combined Speed Limit data from Car &amp; OpenStreetMaps</source>
+        <translation>⦿ Combined(融合数据)：综合使用车辆与OpenStreetMaps的限速数据</translation>
+    </message>
 </context>
 <context>
     <name>SpeedLimitPolicy</name>
