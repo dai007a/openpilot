@@ -837,6 +837,10 @@ Firehose Mode allows you to maximize your training data uploads to improve openp
         <source>Start the vehicle to check vehicle compatibility.</source>
         <translation>请启动车辆以检查兼容性。</translation>
     </message>
+    <message>
+        <source>Speed Limit</source>
+        <translation>速度限制设置</translation>
+    </message>
 </context>
 <context>
     <name>SpeedLimitSettings</name>
