@@ -2570,6 +2570,10 @@ Warning: You are on a metered connection!</source>
         <source>Display useful metrics below the chevron that tracks the lead car (only applicable to cars with openpilot longitudinal control).</source>
         <translation>在追踪车辆下方显示数据（仅适用于带有openpilot纵向控制的汽车）。</translation>
     </message>
+    <message>
+        <source>Display real-time parameters and metrics from various sources.</source>
+        <translation>在屏幕底部及(或)右侧显示实时参数指标。</translation>
+    </message>
 </context>
 <context>
     <name>DisplayPanel</name>
