@@ -884,6 +884,13 @@ Firehose Mode allows you to maximize your training data uploads to improve openp
         <source>⦿ Assist: Adjusts the vehicle's cruise speed based on the current road's speed limit when operating the +/- buttons.</source>
         <translation>⦿ Assist(辅助调节)：操作+/-按钮时，根据当前道路限速自动调整巡航车速</translation>
     </message>
+</context>
+<context>
+    <name>SpeedLimitPolicy</name>
+    <message>
+        <source>Speed Limit Source</source>
+        <translation>速度限制来源</translation>
+    </message>
     <message>
         <source>⦿ Car Only: Use Speed Limit data only from Car</source>
         <translation>⦿ Car Only(仅车辆)：仅使用车辆提供的限速数据</translation>
@@ -903,13 +910,6 @@ Firehose Mode allows you to maximize your training data uploads to improve openp
     <message>
         <source>⦿ Combined: Use combined Speed Limit data from Car &amp; OpenStreetMaps</source>
         <translation>⦿ Combined(融合数据)：综合使用车辆与OpenStreetMaps的限速数据</translation>
-    </message>
-</context>
-<context>
-    <name>SpeedLimitPolicy</name>
-    <message>
-        <source>Speed Limit Source</source>
-        <translation>速度限制来源</translation>
     </message>
 </context>
 <context>
