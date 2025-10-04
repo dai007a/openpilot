@@ -229,7 +229,7 @@ EVENTS_SP: dict[int, dict[str, Alert | AlertCallbackType]] = {
     ET.PERMANENT: Alert(
       "",
       "",
-      AlertStatus.userPrompt, AlertSize.none,
+      AlertStatus.normal, AlertSize.none,
       Priority.MID, VisualAlert.none, AudibleAlert.prompt, 0.1),
   },
 }
