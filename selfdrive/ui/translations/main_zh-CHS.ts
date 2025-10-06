@@ -133,25 +133,6 @@ Please use caution when using this feature. Only use the blinker when traffic an
     </message>
 </context>
 <context>
-    <name>Brightness</name>
-    <message>
-        <source>Brightness</source>
-        <translation>屏幕亮度</translation>
-    </message>
-    <message>
-        <source>Overrides the brightness of the device.</source>
-        <translation>覆盖设备亮度。</translation>
-    </message>
-    <message>
-        <source>Auto (Dark)</source>
-        <translation>自动（深色）</translation>
-    </message>
-    <message>
-        <source>Auto</source>
-        <translation>自动调节</translation>
-    </message>
-</context>
-<context>
     <name>ConfirmationDialog</name>
     <message>
         <source>Ok</source>
@@ -477,16 +458,6 @@ Steering lag calibration is complete.</source>
     <message>
         <source>Wake-Up Behavior</source>
         <translation>唤醒响应</translation>
-    </message>
-    <message>
-        <source>Interactivity Timeout</source>
-        <translation>交互超时</translation>
-    </message>
-    <message>
-        <source>Apply a custom timeout for settings UI.
-This is the time after which settings UI closes automatically if user is not interacting with the screen.</source>
-        <translation>为设置界面应用自定义超时时间。
-该时间为用户在无屏幕操作的情况下，设置界面自动关闭前的等待时长。</translation>
     </message>
     <message>
         <source>Reboot</source>
@@ -2584,6 +2555,35 @@ Warning: You are on a metered connection!</source>
     <message>
         <source>Turn off device screen or reduce brightness after driving starts. It automatically brightens again when screen is touched or a critical event occurs.</source>
         <translation>驾驶开始后关闭设备屏幕或降低亮度。触控屏幕或发生关键事件时将自动恢复亮度。</translation>
+    </message>
+    <message>
+        <source>Interactivity Timeout</source>
+        <translation>交互超时</translation>
+    </message>
+    <message>
+        <source>Apply a custom timeout for settings UI.
+        This is the time after which settings UI closes automatically if user is not interacting with the screen.</source>
+        <translation>为设置界面应用自定义超时时间。
+该时间为用户在无屏幕操作的情况下，设置界面自动关闭前的等待时长。</translation>
+    </message>
+</context>
+<context>
+    <name>Brightness</name>
+    <message>
+        <source>Global Brightness</source>
+        <translation>全局亮度</translation>
+    </message>
+    <message>
+        <source>Overrides the brightness of the device. This applies to both onroad and offroad screens.</source>
+        <translation>覆盖设备的亮度设置。此设置同时适用于行车界面和离线界面。</translation>
+    </message>
+    <message>
+        <source>Auto (Dark)</source>
+        <translation>自动（深色）</translation>
+    </message>
+    <message>
+        <source>Auto</source>
+        <translation>自动调节</translation>
     </message>
 </context>
 <context>
