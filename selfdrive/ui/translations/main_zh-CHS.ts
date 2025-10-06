@@ -425,7 +425,7 @@ Steering lag calibration is complete.</source>
     </message>
     <message>
         <source>Driver Camera Preview</source>
-        <translation>驾驶员监控预览</translation>
+        <translation>驾驶员摄像头预览</translation>
     </message>
     <message>
         <source>Training Guide</source>
@@ -437,7 +437,7 @@ Steering lag calibration is complete.</source>
     </message>
     <message>
         <source>Language</source>
-        <translation>语言设置</translation>
+        <translation>语言</translation>
     </message>
     <message>
         <source>Reset Settings</source>
@@ -449,7 +449,7 @@ Steering lag calibration is complete.</source>
     </message>
     <message>
         <source>Review</source>
-        <translation>查看</translation>
+        <translation>预览</translation>
     </message>
     <message>
         <source>Select a language</source>
@@ -457,7 +457,7 @@ Steering lag calibration is complete.</source>
     </message>
     <message>
         <source>Wake-Up Behavior</source>
-        <translation>开机模式设置</translation>
+        <translation>唤醒响应</translation>
     </message>
     <message>
         <source>Reboot</source>
@@ -469,11 +469,11 @@ Steering lag calibration is complete.</source>
     </message>
     <message>
         <source>Offroad Mode</source>
-        <translation>设置模式</translation>
+        <translation>离线模式</translation>
     </message>
     <message>
         <source>Are you sure you want to exit Always Offroad mode?</source>
-        <translation>您确定要进入行驶模式吗？</translation>
+        <translation>您确定要进入离线模式吗？</translation>
     </message>
     <message>
         <source>Confirm</source>
@@ -481,11 +481,11 @@ Steering lag calibration is complete.</source>
     </message>
     <message>
         <source>Are you sure you want to enter Always Offroad mode?</source>
-        <translation>您确定要进入设置模式吗？</translation>
+        <translation>您确定要进入离线模式吗？</translation>
     </message>
     <message>
         <source>Disengage to Enter Always Offroad Mode</source>
-        <translation>请关闭辅助驾驶功能后再进入设置模式</translation>
+        <translation>关闭辅助驾驶功能以进入离线模式</translation>
     </message>
     <message>
         <source>Are you sure you want to reset all sunnypilot settings to default? Once the settings are reset, there is no going back.</source>
@@ -501,19 +501,19 @@ Steering lag calibration is complete.</source>
     </message>
     <message>
         <source>Exit Always Offroad</source>
-        <translation>点击进入 [ 行驶模式 ]</translation>
+        <translation>退出离线模式</translation>
     </message>
     <message>
-        <source>Enable Always Offroad</source>
-        <translation>点击进入 [ 设置模式 ]</translation>
+        <source>Always Offroad</source>
+        <translation>离线模式</translation>
     </message>
     <message>
         <source>⁍ Default: Device will boot/wake-up normally &amp; will be ready to engage.</source>
-        <translation>⁍ Default：设备正常 启动 并进入行驶模式，可随时启用辅助驾驶。</translation>
+        <translation>⁍ 默认：设备正常 启动 在线，可随时启用辅助驾驶。</translation>
     </message>
     <message>
         <source>⁍ Offroad: Device will be in Always Offroad mode after boot/wake-up.</source>
-        <translation>⁍ Offroad：设备 启动/唤醒 后将始终保持设置模式状态。</translation>
+        <translation>⁍ 离线：设备 启动/唤醒 后将始终保持离线状态。</translation>
     </message>
     <message>
         <source>Controls state of the device after boot/sleep.</source>
