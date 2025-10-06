@@ -436,7 +436,7 @@ void HudRendererSP::drawSpeedLimitSigns(QPainter &p, QRect &sign_rect) {
     speedLimitSubTextFactor = 0.475;
   }
 
-  int alpha = 200;
+  int alpha = 178;
   QColor red_color = QColor(255, 0, 0, alpha);
   QColor speed_color = (speedLimitWarningEnabled && overspeed) ? red_color :
                        (!speedLimitValid && speedLimitLastValid ? QColor(0x91, 0x9b, 0x95, 0xf1) : QColor(0, 0, 0, alpha));
