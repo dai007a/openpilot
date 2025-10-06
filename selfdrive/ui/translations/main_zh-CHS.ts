@@ -761,6 +761,14 @@ Firehose Mode allows you to maximize your training data uploads to improve openp
         <source>When enabled, lateral control will temporarily pause while the driver is applying steering torque (steering override).</source>
         <translation>当启用时，自动横向控制将在驾驶员施加转向扭矩时暂时暂停（手动转向优先）。</translation>
     </message>
+    <message>
+        <source>Enforce Torque Lateral Control</source>
+        <translation>强制扭矩横向控制</translation>
+    </message>
+    <message>
+        <source>Enable this to enforce sunnypilot to steer with Torque lateral control.</source>
+        <translation>启用此选项可强制sunnypilot使用扭矩横向控制进行转向。</translation>
+    </message>
 </context>
 <context>
     <name>LongitudinalPanel</name>
@@ -811,6 +819,60 @@ Firehose Mode allows you to maximize your training data uploads to improve openp
     <message>
         <source>Speed Limit</source>
         <translation>速度限制设置</translation>
+    </message>
+</context>
+<context>
+    <name>TorqueLateralControlSettings</name>
+    <message>
+        <source>Self-Tune</source>
+        <translation>自学习调校</translation>
+    </message>
+    <message>
+        <source>Enables self-tune for Torque lateral control for platforms that do not use Torque lateral control by default.</source>
+        <translation>为默认不使用扭矩横向控制的平台启用扭矩横向控制的自学习调校功能。</translation>
+    </message>
+    <message>
+        <source>Less Restrict Settings for Self-Tune (Beta)</source>
+        <translation>自学习调校宽松设置（测试版）</translation>
+    </message>
+    <message>
+        <source>Less strict settings when using Self-Tune. This allows torqued to be more forgiving when learning values.</source>
+        <translation>使用自学习调校时采用较宽松的设置。这使扭矩控制在学习数值时容错性更高。</translation>
+    </message>
+    <message>
+        <source>Enable Custom Tuning</source>
+        <translation>启用自定义调校</translation>
+    </message>
+    <message>
+        <source>Enables custom tuning for Torque lateral control. Modifying Lateral Acceleration Factor and Friction below will override the offline values indicated in the YAML files within \"opendbc/car/torque_data\". The values will also be used live when \"Manual Real-Time Tuning\" toggle is enabled.</source>
+        <translation>启用扭矩横向控制的自定义调校。修改下方的横向加速度系数和摩擦系数将覆盖\"opendbc/car/torque_data\"中YAML文件指定的离线值。当启用\"手动实时调校\"开关时，这些值也将实时生效。</translation>
+    </message>
+</context>
+<context>
+    <name>TorqueLateralControlCustomParams</name>
+    <message>
+        <source>Manual Real-Time Tuning</source>
+        <translation>手动实时调校</translation>
+    </message>
+    <message>
+        <source>Enforces the torque lateral controller to use the fixed values instead of the learned values from Self-Tune. Enabling this toggle overrides Self-Tune values.</source>
+        <translation>强制扭矩横向控制器使用固定值而非自学习调校的学习值。启用此开关将覆盖自学习调校的值。</translation>
+    </message>
+    <message>
+        <source>Lateral Acceleration Factor</source>
+        <translation>横向加速度系数</translation>
+    </message>
+    <message>
+        <source>Real-time and Offline</source>
+        <translation>实时和离线</translation>
+    </message>
+    <message>
+        <source>Offline Only</source>
+        <translation>仅离线</translation>
+    </message>
+    <message>
+        <source>Friction</source>
+        <translation>摩擦系数</translation>
     </message>
 </context>
 <context>
