@@ -769,6 +769,10 @@ Firehose Mode allows you to maximize your training data uploads to improve openp
         <source>Enable this to enforce sunnypilot to steer with Torque lateral control.</source>
         <translation>启用此选项可强制sunnypilot使用扭矩横向控制进行转向。</translation>
     </message>
+    <message>
+        <source>Customize Params</source>
+        <translation>自定义参数</translation>
+    </message>
 </context>
 <context>
     <name>LongitudinalPanel</name>
@@ -844,8 +848,8 @@ Firehose Mode allows you to maximize your training data uploads to improve openp
         <translation>启用自定义调校</translation>
     </message>
     <message>
-        <source>Enables custom tuning for Torque lateral control. Modifying Lateral Acceleration Factor and Friction below will override the offline values indicated in the YAML files within \"opendbc/car/torque_data\". The values will also be used live when \"Manual Real-Time Tuning\" toggle is enabled.</source>
-        <translation>启用扭矩横向控制的自定义调校。修改下方的横向加速度系数和摩擦系数将覆盖\"opendbc/car/torque_data\"中YAML文件指定的离线值。当启用\"手动实时调校\"开关时，这些值也将实时生效。</translation>
+        <source>Enables custom tuning for Torque lateral control. Modifying Lateral Acceleration Factor and Friction below will override the offline values indicated in the YAML files within "opendbc/car/torque_data". The values will also be used live when "Manual Real-Time Tuning" toggle is enabled.</source>
+        <translation>启用扭矩横向控制的自定义调校。修改下方的横向加速度系数和摩擦系数将覆盖"opendbc/car/torque_data"中YAML文件指定的离线值。当启用"手动实时调校"开关时，这些值也将实时生效。</translation>
     </message>
 </context>
 <context>

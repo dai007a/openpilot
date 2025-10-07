@@ -45,8 +45,8 @@ TorqueLateralControlSettings::TorqueLateralControlSettings(QWidget *parent) : QW
   torqueLateralControlCustomParams = new TorqueLateralControlCustomParams(
     "CustomTorqueParams",
     tr("Enable Custom Tuning"),
-    tr("Enables custom tuning for Torque lateral control. Modifying Lateral Acceleration Factor and Friction below will override the offline values indicated in the YAML files within \"opendbc/car/torque_data\". "
-       "The values will also be used live when \"Manual Real-Time Tuning\" toggle is enabled."),
+    tr("Enables custom tuning for Torque lateral control. Modifying Lateral Acceleration Factor and Friction below will override the offline values indicated in the YAML files within "opendbc/car/torque_data". "
+       "The values will also be used live when "Manual Real-Time Tuning" toggle is enabled."),
     "../assets/offroad/icon_blank.png",
     this);
   list->addItem(torqueLateralControlCustomParams);
