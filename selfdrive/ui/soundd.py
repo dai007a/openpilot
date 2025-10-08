@@ -81,18 +81,6 @@ class Soundd(QuietMode):
         length = wavefile.getnframes()
         self.loaded_sounds[sound] = np.frombuffer(wavefile.readframes(length), dtype=np.int16).astype(np.float32) / (2**16/2)
 
-  def should_play_sound(self, alert):
-    # Only allow e2eChime sound in quiet mode
-    if alert == AudibleAlert.prompt:
-      sm = messaging.SubMaster(['selfdriveState'])
-      sm.update(0)
-      if sm.updated['selfdriveState']:
-        # Check if the current alert is e2eChime
-        if sm['selfdriveState'].alertType == EventNameSP.e2eChime:
-          return True  # e2eChime plays
-      return not self.is_quiet_mode_enabled()  # Other prompts follow quiet mode
-    return not self.is_quiet_mode_enabled()  # Non-prompt alerts follow quiet mode
-
   def get_sound_data(self, frames): # get "frames" worth of data from the current alert sound, looping when required
 
     ret = np.zeros(frames, dtype=np.float32)
