@@ -148,7 +148,7 @@ Please use caution when using this feature. Only use the blinker when traffic an
     </message>
     <message>
         <source>Overrides the brightness of the device. This applies to both onroad and offroad screens. </source>
-        <translation>覆盖设备的亮度设置。此设置同时适用于行车界面和离线界面。</translation>
+        <translation>覆盖设备的亮度设置。此设置同时适用于行车界面和离线界面。 </translation>
     </message>
 </context>
 <context>
@@ -257,7 +257,7 @@ This only toggles the visibility of the controls; it does not toggle the actual 
         <translation>启用Copyparty服务</translation>
     </message>
     <message>
-        <source>Copyparty is a very capable file server, you can use it to download your routes, view your logs and even make some edits on some files from your browser. Requires you to connect to your comma locally via it's IP.</source>
+        <source>Copyparty is a very capable file server, you can use it to download your routes, view your logs and even make some edits on some files from your browser. Requires you to connect to your comma locally via it&apos;s IP.</source>
         <translation>Copyparty是一个功能强大的文件服务器，你可以使用它来下载你的路线，查看你的日志，甚至可以通过浏览器对某些文件进行一些编辑。它需要你通过其IP地址本地连接到你的comma。</translation>
     </message>
 </context>
@@ -536,7 +536,7 @@ Steering lag calibration is complete.</source>
     </message>
     <message>
         <source>Onroad Uploads</source>
-        <translation type="unfinished"></translation>
+        <translation>行车数据上传</translation>
     </message>
     <message>
         <source>Enable Always Offroad</source>
@@ -555,11 +555,11 @@ Steering lag calibration is complete.</source>
     </message>
     <message>
         <source>Onroad Screen: Reduced Brightness</source>
-        <translation type="unfinished">行车屏幕亮度设置</translation>
+        <translation>行车屏幕亮度设置</translation>
     </message>
     <message>
         <source>Turn off device screen or reduce brightness after driving starts. It automatically brightens again when screen is touched or a visible alert is displayed.</source>
-        <translation type="unfinished">驾驶开始后关闭设备屏幕或降低亮度。当触摸屏幕或显示可见警报时，屏幕会自动恢复亮度。</translation>
+        <translation>驾驶开始后关闭设备屏幕或降低亮度。当触摸屏幕或显示可见警报时，屏幕会自动恢复亮度。</translation>
     </message>
     <message>
         <source>Interactivity Timeout</source>
@@ -743,57 +743,57 @@ Firehose Mode allows you to maximize your training data uploads to improve openp
     <name>HudRendererSP</name>
     <message>
         <source>km/h</source>
-        <translation type="unfinished">km/h</translation>
+        <translation>km/h</translation>
     </message>
     <message>
         <source>mph</source>
-        <translation type="unfinished">mph</translation>
+        <translation>mph</translation>
     </message>
     <message>
         <source>GREEN
 LIGHT</source>
-        <translation type="unfinished"></translation>
+        <translation>绿灯</translation>
     </message>
     <message>
         <source>LEAD VEHICLE
 DEPARTING</source>
-        <translation type="unfinished"></translation>
+        <translation>前车起步</translation>
     </message>
     <message>
         <source>SPEED</source>
-        <translation type="unfinished"></translation>
+        <translation>速度</translation>
     </message>
     <message>
         <source>LIMIT</source>
-        <translation type="unfinished"></translation>
+        <translation>限速</translation>
     </message>
     <message>
         <source>Near</source>
-        <translation type="unfinished"></translation>
+        <translation>附近</translation>
     </message>
     <message>
         <source>km</source>
-        <translation type="unfinished"></translation>
+        <translation>km</translation>
     </message>
     <message>
         <source>m</source>
-        <translation type="unfinished"></translation>
+        <translation>m</translation>
     </message>
     <message>
         <source>mi</source>
-        <translation type="unfinished"></translation>
+        <translation>mi</translation>
     </message>
     <message>
         <source>ft</source>
-        <translation type="unfinished"></translation>
+        <translation>英尺</translation>
     </message>
     <message>
         <source>AHEAD</source>
-        <translation type="unfinished"></translation>
+        <translation>前方</translation>
     </message>
     <message>
         <source>MAX</source>
-        <translation type="unfinished">最高定速</translation>
+        <translation>最高定速</translation>
     </message>
 </context>
 <context>
@@ -1430,7 +1430,7 @@ The default software delay value is 0.2</source>
     </message>
     <message>
         <source>&lt;b&gt;Unsupported branch detected&lt;/b&gt; - The current version of &lt;b&gt;&lt;u&gt;%1&lt;/u&gt;&lt;/b&gt; branch is no longer supported on the comma three. Please go to &lt;b&gt;[Device &gt; Software]&lt;/b&gt; and install a supported branch with &lt;b&gt;&lt;u&gt;-tici&lt;/u&gt;&lt;/b&gt; in the branch name for the comma three.</source>
-        <translation type="unfinished">&lt;b&gt;检测到不支持的版本分支&lt;/b&gt; - 当前使用的 &lt;b&gt;&lt;u&gt;%1&lt;/u&gt;&lt;/b&gt; 分支版本已不再支持 comma three 设备。请前往 &lt;b&gt;[设备 &gt; 软件]&lt;/b&gt; 安装名称中包含 &lt;b&gt;&lt;u&gt;-tici&lt;/u&gt;&lt;/b&gt; 的受支持分支版本。</translation>
+        <translation>&lt;b&gt;检测到不支持的版本分支&lt;/b&gt; - 当前使用的 &lt;b&gt;&lt;u&gt;%1&lt;/u&gt;&lt;/b&gt; 分支版本已不再支持 comma three 设备。请前往 &lt;b&gt;[设备 &gt; 软件]&lt;/b&gt; 安装名称中包含 &lt;b&gt;&lt;u&gt;-tici&lt;/u&gt;&lt;/b&gt; 的受支持分支版本。</translation>
     </message>
 </context>
 <context>
@@ -1820,56 +1820,56 @@ Warning: You are on a metered connection!</source>
     </message>
     <message>
         <source>None</source>
-        <translation type="unfinished">无</translation>
+        <translation>无</translation>
     </message>
     <message>
         <source>Fixed</source>
-        <translation type="unfinished">固定</translation>
+        <translation>固定</translation>
     </message>
     <message>
         <source>Percent</source>
-        <translation type="unfinished">百分比</translation>
+        <translation>百分比</translation>
     </message>
     <message>
         <source>Car
 Only</source>
-        <translation type="unfinished">仅车辆</translation>
+        <translation>仅车辆</translation>
     </message>
     <message>
         <source>Map
 Only</source>
-        <translation type="unfinished">仅地图</translation>
+        <translation>仅地图</translation>
     </message>
     <message>
         <source>Car
 First</source>
-        <translation type="unfinished">车辆优先</translation>
+        <translation>车辆优先</translation>
     </message>
     <message>
         <source>Map
 First</source>
-        <translation type="unfinished">地图优先</translation>
+        <translation>地图优先</translation>
     </message>
     <message>
         <source>Combined
 Data</source>
-        <translation type="unfinished">组合数据</translation>
+        <translation>组合数据</translation>
     </message>
     <message>
         <source>Off</source>
-        <translation type="unfinished">关闭</translation>
+        <translation>关闭</translation>
     </message>
     <message>
         <source>Information</source>
-        <translation type="unfinished">信息</translation>
+        <translation>信息</translation>
     </message>
     <message>
         <source>Warning</source>
-        <translation type="unfinished">警告</translation>
+        <translation>警告</translation>
     </message>
     <message>
         <source>Assist</source>
-        <translation type="unfinished">辅助</translation>
+        <translation>辅助</translation>
     </message>
 </context>
 <context>
@@ -2209,7 +2209,7 @@ Data</source>
     <name>SpeedLimitPolicy</name>
     <message>
         <source>Back</source>
-        <translation type="unfinished">返回</translation>
+        <translation>返回</translation>
     </message>
     <message>
         <source>Speed Limit Source</source>
@@ -2268,19 +2268,19 @@ Data</source>
     </message>
     <message>
         <source>⦿ Off: Disables the Speed Limit functions.</source>
-        <translation>⦿ Off(关闭)：停用限速功能</translation>
+        <translation>⦿ Off(关闭)：停用限速功能。</translation>
     </message>
     <message>
-    <source>⦿ Information: Displays the current road&apos;s speed limit.</source>
-        <translation>⦿ Information(信息提示)：显示当前道路限速</translation>
+        <source>⦿ Information: Displays the current road&apos;s speed limit.</source>
+        <translation>⦿ Information(信息提示)：显示当前道路限速。</translation>
     </message>
     <message>
-    <source>⦿ Warning: Provides a warning when exceeding the current road&apos;s speed limit.</source>
-        <translation>⦿ Warning(超速警告)：超过当前道路限速时发出警告</translation>
+        <source>⦿ Warning: Provides a warning when exceeding the current road&apos;s speed limit.</source>
+        <translation>⦿ Warning(超速警告)：超过当前道路限速时发出警告。</translation>
     </message>
     <message>
-    <source>⦿ Assist: Adjusts the vehicle&apos;s cruise speed based on the current road&apos;s speed limit when operating the +/- buttons.</source>
-        <translation>⦿ Assist(辅助调节)：操作+/-按钮时，根据当前道路限速自动调整巡航车速</translation>
+        <source>⦿ Assist: Adjusts the vehicle&apos;s cruise speed based on the current road&apos;s speed limit when operating the +/- buttons.</source>
+        <translation>⦿ Assist(辅助调节)：操作+/-按钮时，根据当前道路限速自动调整巡航车速。</translation>
     </message>
 </context>
 <context>
@@ -2716,7 +2716,7 @@ Data</source>
     </message>
     <message>
         <source>Enables custom tuning for Torque lateral control. Modifying Lateral Acceleration Factor and Friction below will override the offline values indicated in the YAML files within &quot;opendbc/car/torque_data&quot;. The values will also be used live when &quot;Manual Real-Time Tuning&quot; toggle is enabled.</source>
-        <translation type="unfinished">启用扭矩横向控制的自定义调校。修改下方的"横向加速度系数"和"摩擦系数"将覆盖 "opendbc/car/torque_data" 目录下 YAML 文件中指定的离线值。当"手动实时调校"开关启用时，这些值也将被实时应用。</translation>
+        <translation>启用扭矩横向控制的自定义调校。修改下方的&quot;横向加速度系数&quot;和&quot;摩擦系数&quot;将覆盖 &quot;opendbc/car/torque_data&quot; 目录下 YAML 文件中指定的离线值。当&quot;手动实时调校&quot;开关启用时，这些值也将被实时应用。</translation>
     </message>
 </context>
 <context>
@@ -2731,7 +2731,7 @@ Data</source>
     </message>
     <message>
         <source>Favorites</source>
-        <translation type="unfinished">收藏夹</translation>
+        <translation>收藏夹</translation>
     </message>
 </context>
 <context>
@@ -2750,31 +2750,31 @@ Data</source>
     </message>
     <message>
         <source>Off</source>
-        <translation type="unfinished">关闭</translation>
+        <translation>关闭</translation>
     </message>
     <message>
         <source>Distance</source>
-        <translation type="unfinished">距离</translation>
+        <translation>距离</translation>
     </message>
     <message>
         <source>Speed</source>
-        <translation type="unfinished">速度</translation>
+        <translation>速度</translation>
     </message>
     <message>
         <source>Time</source>
-        <translation type="unfinished">时间</translation>
+        <translation>时间</translation>
     </message>
     <message>
         <source>All</source>
-        <translation type="unfinished">全部</translation>
+        <translation>全部</translation>
     </message>
     <message>
         <source>Display Metrics Below Chevron</source>
-        <translation type="unfinished">前车数据显示</translation>
+        <translation>前车数据显示</translation>
     </message>
     <message>
         <source>Display useful metrics below the chevron that tracks the lead car (only applicable to cars with openpilot longitudinal control).</source>
-        <translation type="unfinished">在跟踪前车的箭头下方显示有用指标（仅适用于具有openpilot纵向控制的车辆）。</translation>
+        <translation>在跟踪前车的箭头下方显示有用指标（仅适用于具有openpilot纵向控制的车辆）。</translation>
     </message>
     <message>
         <source>Enable Tesla Rainbow Mode</source>
@@ -2834,29 +2834,29 @@ Data</source>
     </message>
     <message>
         <source>Speedometer: Always Display True Speed</source>
-        <translation type="unfinished">车速表：始终显示真实车速</translation>
+        <translation>车速表：始终显示真实车速</translation>
     </message>
     <message>
         <source>Always display the true vehicle current speed from wheel speed sensors.</source>
-        <translation type="unfinished">始终显示来自轮速传感器的车辆当前真实速度。</translation>
+        <translation>始终显示来自轮速传感器的车辆当前真实速度。</translation>
     </message>
     <message>
         <source>Speedometer: Hide from Onroad Screen</source>
-        <translation type="unfinished">车速表：在行车屏幕上隐藏</translation>
+        <translation>车速表：在行车屏幕上隐藏</translation>
     </message>
     <message>
         <source>Right</source>
-        <translation type="unfinished">右侧</translation>
+        <translation>右侧</translation>
     </message>
     <message>
         <source>Right &amp;&amp;
 Bottom</source>
-        <translation type="unfinished">右侧 &amp;&amp;
+        <translation>右侧 &amp;&amp;
 底部</translation>
     </message>
     <message>
         <source>Developer UI</source>
-        <translation type="unfinished">数据显示</translation>
+        <translation>数据显示</translation>
     </message>
     <message>
         <source>Display real-time parameters and metrics from various sources.</source>
