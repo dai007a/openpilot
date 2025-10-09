@@ -133,25 +133,6 @@ Please use caution when using this feature. Only use the blinker when traffic an
     </message>
 </context>
 <context>
-    <name>Brightness</name>
-    <message>
-        <source>Brightness</source>
-        <translation>屏幕亮度</translation>
-    </message>
-    <message>
-        <source>Overrides the brightness of the device.</source>
-        <translation>覆盖设备亮度。</translation>
-    </message>
-    <message>
-        <source>Auto (Dark)</source>
-        <translation>自动（深色）</translation>
-    </message>
-    <message>
-        <source>Auto</source>
-        <translation>自动调节</translation>
-    </message>
-</context>
-<context>
     <name>ConfirmationDialog</name>
     <message>
         <source>Ok</source>
@@ -444,7 +425,7 @@ Steering lag calibration is complete.</source>
     </message>
     <message>
         <source>Driver Camera Preview</source>
-        <translation>驾驶员摄像头预览</translation>
+        <translation>驾驶员监控预览</translation>
     </message>
     <message>
         <source>Training Guide</source>
@@ -456,7 +437,7 @@ Steering lag calibration is complete.</source>
     </message>
     <message>
         <source>Language</source>
-        <translation>语言</translation>
+        <translation>语言设置</translation>
     </message>
     <message>
         <source>Reset Settings</source>
@@ -468,7 +449,7 @@ Steering lag calibration is complete.</source>
     </message>
     <message>
         <source>Review</source>
-        <translation>预览</translation>
+        <translation>查看</translation>
     </message>
     <message>
         <source>Select a language</source>
@@ -476,17 +457,11 @@ Steering lag calibration is complete.</source>
     </message>
     <message>
         <source>Wake-Up Behavior</source>
-        <translation>唤醒响应</translation>
+        <translation>开机模式设置</translation>
     </message>
     <message>
-        <source>Interactivity Timeout</source>
-        <translation>交互超时</translation>
-    </message>
-    <message>
-        <source>Apply a custom timeout for settings UI.
-This is the time after which settings UI closes automatically if user is not interacting with the screen.</source>
-        <translation>为设置界面应用自定义超时时间。
-该时间为用户在无屏幕操作的情况下，设置界面自动关闭前的等待时长。</translation>
+        <source>Onroad Uploads</source>
+        <translation>行车数据上传</translation>
     </message>
     <message>
         <source>Reboot</source>
@@ -498,11 +473,11 @@ This is the time after which settings UI closes automatically if user is not int
     </message>
     <message>
         <source>Offroad Mode</source>
-        <translation>离线模式</translation>
+        <translation>设置模式</translation>
     </message>
     <message>
         <source>Are you sure you want to exit Always Offroad mode?</source>
-        <translation>您确定要进入离线模式吗？</translation>
+        <translation>您确定要进入行驶模式吗？</translation>
     </message>
     <message>
         <source>Confirm</source>
@@ -510,11 +485,11 @@ This is the time after which settings UI closes automatically if user is not int
     </message>
     <message>
         <source>Are you sure you want to enter Always Offroad mode?</source>
-        <translation>您确定要进入离线模式吗？</translation>
+        <translation>您确定要进入设置模式吗？</translation>
     </message>
     <message>
         <source>Disengage to Enter Always Offroad Mode</source>
-        <translation>关闭辅助驾驶功能以进入离线模式</translation>
+        <translation>请关闭辅助驾驶功能后再进入设置模式</translation>
     </message>
     <message>
         <source>Are you sure you want to reset all sunnypilot settings to default? Once the settings are reset, there is no going back.</source>
@@ -530,19 +505,19 @@ This is the time after which settings UI closes automatically if user is not int
     </message>
     <message>
         <source>Exit Always Offroad</source>
-        <translation>退出离线模式</translation>
+        <translation>点击进入 [ 行驶模式 ]</translation>
     </message>
     <message>
-        <source>Always Offroad</source>
-        <translation>离线模式</translation>
+        <source>Enable Always Offroad</source>
+        <translation>点击进入 [ 设置模式 ]</translation>
     </message>
     <message>
         <source>⁍ Default: Device will boot/wake-up normally &amp; will be ready to engage.</source>
-        <translation>⁍ 默认：设备正常 启动 在线，可随时启用辅助驾驶。</translation>
+        <translation>⁍ Default：设备正常 启动 并进入行驶模式，可随时启用辅助驾驶。</translation>
     </message>
     <message>
         <source>⁍ Offroad: Device will be in Always Offroad mode after boot/wake-up.</source>
-        <translation>⁍ 离线：设备 启动/唤醒 后将始终保持离线状态。</translation>
+        <translation>⁍ Offroad：设备 启动/唤醒 后将始终保持设置模式状态。</translation>
     </message>
     <message>
         <source>Controls state of the device after boot/sleep.</source>
@@ -2543,6 +2518,22 @@ Warning: You are on a metered connection!</source>
         <translation>注意：此提示音仅作为通知用途。驾驶员有责任观察周围环境并做出相应决策。</translation>
     </message>
     <message>
+        <source>Speedometer: Always Display True Speed</source>
+        <translation>始终显示真实车速</translation>
+    </message>
+    <message>
+        <source>Always display the true vehicle current speed from wheel speed sensors.</source>
+        <translation>始终显示来自车轮速度传感器的车辆真实当前速度。</translation>
+    </message>
+    <message>
+        <source>Speedometer: Hide from Onroad Screen</source>
+        <translation>在行车屏幕上隐藏速度显示</translation>
+    </message>
+    <message>
+        <source>Always display the true vehicle current speed from wheel speed sensors.</source>
+        <translation>始终显示来自车轮速度传感器的车辆真实当前速度。</translation>
+    </message>
+    <message>
         <source>Off</source>
         <translation>关闭</translation>
     </message>
@@ -2578,12 +2569,41 @@ Warning: You are on a metered connection!</source>
 <context>
     <name>DisplayPanel</name>
     <message>
-        <source>Driving Screen Off: Non-Critical Events</source>
-        <translation>驾驶时关闭屏幕：非关键事件</translation>
+        <source>Onroad Screen: Reduced Brightness</source>
+        <translation>驾驶时屏幕设置：降低亮度</translation>
     </message>
     <message>
-        <source>Turn off device screen or reduce brightness after driving starts. It automatically brightens again when screen is touched or a critical event occurs.</source>
-        <translation>驾驶开始后关闭设备屏幕或降低亮度。触控屏幕或发生关键事件时将自动恢复亮度。</translation>
+        <source>Turn off device screen or reduce brightness after driving starts. It automatically brightens again when screen is touched or a visible alert is displayed.</source>
+        <translation>驾驶开始后关闭设备屏幕或降低亮度。当触摸屏幕或显示可见警报时，屏幕会自动恢复亮度。</translation>
+    </message>
+    <message>
+        <source>Interactivity Timeout</source>
+        <translation>交互超时</translation>
+    </message>
+    <message>
+        <source>Apply a custom timeout for settings UI.
+This is the time after which settings UI closes automatically if user is not interacting with the screen.</source>
+        <translation>为设置界面应用自定义超时时间。
+该时间为用户在无屏幕操作的情况下，设置界面自动关闭前的等待时长。</translation>
+    </message>
+</context>
+<context>
+    <name>Brightness</name>
+    <message>
+        <source>Global Brightness</source>
+        <translation>全局亮度</translation>
+    </message>
+    <message>
+        <source>Overrides the brightness of the device. This applies to both onroad and offroad screens.</source>
+        <translation>覆盖设备的亮度设置。此设置同时适用于行车界面和离线界面。</translation>
+    </message>
+    <message>
+        <source>Auto (Dark)</source>
+        <translation>自动（深色）</translation>
+    </message>
+    <message>
+        <source>Auto</source>
+        <translation>自动调节</translation>
     </message>
 </context>
 <context>
