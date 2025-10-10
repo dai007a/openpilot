@@ -492,7 +492,7 @@ Steering lag calibration is complete.</source>
     </message>
     <message>
         <source>Are you sure you want to exit Always Offroad mode?</source>
-        <translation>您确定要进入行驶模式吗？</translation>
+        <translation>您确定要进入 行驶模式 吗？</translation>
     </message>
     <message>
         <source>Confirm</source>
@@ -500,11 +500,11 @@ Steering lag calibration is complete.</source>
     </message>
     <message>
         <source>Are you sure you want to enter Always Offroad mode?</source>
-        <translation>您确定要进入设置模式吗？</translation>
+        <translation>您确定要进入 设置模式 吗？</translation>
     </message>
     <message>
         <source>Disengage to Enter Always Offroad Mode</source>
-        <translation>请关闭辅助驾驶功能后再进入设置模式</translation>
+        <translation>请关闭辅助驾驶功能后再进入 设置模式</translation>
     </message>
     <message>
         <source>Are you sure you want to reset all sunnypilot settings to default? Once the settings are reset, there is no going back.</source>
@@ -528,7 +528,7 @@ Steering lag calibration is complete.</source>
     </message>
     <message>
         <source>⁍ Offroad: Device will be in Always Offroad mode after boot/wake-up.</source>
-        <translation>⁍ Offroad：设备 启动/唤醒 后将始终保持设置模式状态。</translation>
+        <translation>⁍ Offroad：设备 启动/唤醒 后将始终保持 设置模式 状态。</translation>
     </message>
     <message>
         <source>Controls state of the device after boot/sleep.</source>
@@ -610,7 +610,7 @@ This is the time after which settings UI closes automatically if user is not int
     <name>ExitOffroadButton</name>
     <message>
         <source>Are you sure you want to exit Always Offroad mode?</source>
-        <translation>您确定要退出离线模式吗？</translation>
+        <translation>您确定要退出 设置模式 吗？</translation>
     </message>
     <message>
         <source>Confirm</source>
@@ -618,7 +618,7 @@ This is the time after which settings UI closes automatically if user is not int
     </message>
     <message>
         <source>EXIT ALWAYS OFFROAD MODE</source>
-        <translation>退出离线模式</translation>
+        <translation>退出 设置模式</translation>
     </message>
 </context>
 <context>
@@ -820,7 +820,7 @@ DEPARTING</source>
     </message>
     <message>
         <source>Enable &quot;Always Offroad&quot; in Device panel, or turn vehicle off to select an option.</source>
-        <translation>请在“设备”面板中启用“离线”模式，或关闭车辆电源后再选择该选项。</translation>
+        <translation>请在“设备”面板中启用“设置模式”，或关闭车辆电源后再选择该选项。</translation>
     </message>
     <message>
         <source>Off: Uses default tuning</source>
@@ -1452,7 +1452,7 @@ The default software delay value is 0.2</source>
     <name>OffroadHomeSP</name>
     <message>
         <source>ALWAYS OFFROAD ACTIVE</source>
-        <translation>已激活离线模式</translation>
+        <translation>已处于 设置模式</translation>
     </message>
 </context>
 <context>
@@ -2202,7 +2202,7 @@ Data</source>
     </message>
     <message>
         <source>Please enable always offroad mode or turn off vehicle to adjust these toggles</source>
-        <translation>请先启用离线模式，或关闭车辆电源后再调整这些开关</translation>
+        <translation>请先启用 设置模式，或关闭车辆电源后再调整这些开关</translation>
     </message>
 </context>
 <context>
