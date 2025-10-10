@@ -2845,6 +2845,10 @@ Data</source>
         <translation>车速表：在行车屏幕上隐藏</translation>
     </message>
     <message>
+        <source>When enabled, the speedometer on the onroad screen is not displayed.</source>
+        <translation>启用后，行车屏幕上的车速将不再显示。</translation>
+    </message>
+    <message>
         <source>Right</source>
         <translation>右侧</translation>
     </message>
