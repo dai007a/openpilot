@@ -453,8 +453,8 @@ void HudRendererSP::drawSpeedLimitSigns(QPainter &p, QRect &sign_rect) {
   // "SPEED LIMIT" text
   p.setFont(InterFont(40, QFont::DemiBold));
   p.setPen(QColor(0, 0, 0, alpha));
-  p.drawText(inner_rect.adjusted(0, 10, 0, 0), Qt::AlignTop | Qt::AlignHCenter, tr("SPEED"));
-  p.drawText(inner_rect.adjusted(0, 50, 0, 0), Qt::AlignTop | Qt::AlignHCenter, tr("LIMIT"));
+  p.drawText(inner_rect.adjusted(0, 5, 0, 0), Qt::AlignTop | Qt::AlignHCenter, tr("SPEED"));
+  p.drawText(inner_rect.adjusted(0, 45, 0, 0), Qt::AlignTop | Qt::AlignHCenter, tr("LIMIT"));
 
   // Speed value with color coding
   p.setFont(InterFont(90, QFont::Bold));
@@ -606,7 +606,7 @@ void HudRendererSP::drawSetSpeedSP(QPainter &p, const QRect &surface_rect) {
 
   // Draw set speed box
   p.setPen(QPen(QColor(255, 255, 255, 75), 6));
-  p.setBrush(QColor(0, 0, 0, 166));
+  p.setBrush(QColor(0, 0, 0, 152));
   p.drawRoundedRect(set_speed_rect, 32, 32);
 
   // Colors based on status
@@ -623,7 +623,7 @@ void HudRendererSP::drawSetSpeedSP(QPainter &p, const QRect &surface_rect) {
       } else if (status == STATUS_OVERRIDE) {
         max_color = QColor(0x91, 0x9b, 0x95, 0xff);
       } else {
-        max_color = QColor(0x80, 0xd8, 0xa6, 0xff);
+        max_color = QColor(0x7f, 0xff, 0x00, 0xff);
       }
     }
   }
@@ -631,7 +631,7 @@ void HudRendererSP::drawSetSpeedSP(QPainter &p, const QRect &surface_rect) {
   // Draw "MAX" text
   p.setFont(InterFont(40, QFont::DemiBold));
   p.setPen(max_color);
-  p.drawText(set_speed_rect.adjusted(0, 27, 0, 0), Qt::AlignTop | Qt::AlignHCenter, tr("MAX"));
+  p.drawText(set_speed_rect.adjusted(0, 20, 0, 0), Qt::AlignTop | Qt::AlignHCenter, tr("MAX"));
 
   // Draw set speed
   QString setSpeedStr = is_cruise_set ? QString::number(std::nearbyint(set_speed)) : "–";
