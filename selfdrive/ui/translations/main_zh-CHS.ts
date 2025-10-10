@@ -760,6 +760,10 @@ DEPARTING</source>
         <translation>前车起步</translation>
     </message>
     <message>
+        <source>STOPPED</source>
+        <translation>等待中</translation>
+    </message>
+    <message>
         <source>SPEED</source>
         <translation>速度</translation>
     </message>
