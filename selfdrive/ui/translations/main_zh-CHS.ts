@@ -2853,6 +2853,14 @@ Data</source>
         <translation>启用后，行车屏幕上的车速将不再显示。</translation>
     </message>
     <message>
+        <source>Display Turn Signals</source>
+        <translation>显示屏幕转向提示</translation>
+    </message>
+    <message>
+        <source>When enabled, visual turn indicators are drawn on the HUD.</source>
+        <translation>启用后，屏幕上将显示可视化的转向指示。</translation>
+    </message>
+    <message>
         <source>Right</source>
         <translation>右侧</translation>
     </message>
