@@ -83,7 +83,7 @@ def below_steer_speed_alert(CP: car.CarParams, CS: car.CarState, sm: messaging.S
     f" {get_display_speed(CP.minSteerSpeed, metric)} 以下速度行驶时无法自动转向",
     "",
     AlertStatus.userPrompt, AlertSize.small,
-    Priority.LOW, VisualAlert.steerRequired, AudibleAlert.prompt, 0.4)
+    Priority.LOW, VisualAlert.none, AudibleAlert.prompt, 0.4)
 
 
 def calibration_incomplete_alert(CP: car.CarParams, CS: car.CarState, sm: messaging.SubMaster, metric: bool, soft_disable_time: int, personality) -> Alert:
@@ -204,14 +204,14 @@ def personality_changed_alert(CP: car.CarParams, CS: car.CarState, sm: messaging
 
 
 def invalid_lkas_setting_alert(CP: car.CarParams, CS: car.CarState, sm: messaging.SubMaster, metric: bool, soft_disable_time: int, personality) -> Alert:
-  text = "切换原厂车道保持辅助系统（LKAS）的开关以激活"
+  text = "切换原厂车道保持辅助系统（LKAS）的开关以启用"
   if CP.brand == "tesla":
-    text = "切换到交通感知巡航控制（TACC）以激活"
+    text = "切换到交通感知巡航控制（TACC）以启用"
   elif CP.brand == "mazda":
-    text = "Enable your car's LKAS to engage"
+    text = "启用车辆的LKAS系统以启用"
   elif CP.brand == "nissan":
-    text = "Disable your car's stock LKAS to engage"
-  return NormalPermanentAlert("Invalid LKAS setting", text)
+    text = "禁用原车的LKAS系统以启用"
+  return NormalPermanentAlert("LKAS设置无效", text)
 
 
 
@@ -434,7 +434,7 @@ EVENTS: dict[int, dict[str, Alert | AlertCallbackType]] = {
       "请接管车辆",
       "超过转向限制",
       AlertStatus.userPrompt, AlertSize.mid,
-      Priority.LOW, VisualAlert.steerRequired, AudibleAlert.none, 2.),
+      Priority.LOW, VisualAlert.steerRequired, AudibleAlert.none, .1),
   },
 
   # Thrown when the fan is driven at >50% but is not rotating
@@ -521,7 +521,7 @@ EVENTS: dict[int, dict[str, Alert | AlertCallbackType]] = {
 
   EventName.pedalPressed: {
     ET.USER_DISABLE: EngagementAlert(AudibleAlert.disengage),
-    ET.NO_ENTRY: NoEntryAlert("Pedal Pressed",
+    ET.NO_ENTRY: NoEntryAlert("踏板被踩下",
                               visual_alert=VisualAlert.brakePressed),
   },
 
@@ -560,7 +560,7 @@ EVENTS: dict[int, dict[str, Alert | AlertCallbackType]] = {
   },
 
   EventName.resumeBlocked: {
-    ET.NO_ENTRY: NoEntryAlert("Press Set to Engage"),
+    ET.NO_ENTRY: NoEntryAlert("按下Set键以启用"),
   },
 
   EventName.wrongCruiseMode: {
