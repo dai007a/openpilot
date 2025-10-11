@@ -73,6 +73,7 @@ dependencies = [
 
   # ui
   "qrcode",
+  "mapbox-earcut",
 ]
 
 [project.optional-dependencies]
