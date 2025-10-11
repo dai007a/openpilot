@@ -666,7 +666,7 @@ void HudRendererSP::drawE2eAlert(QPainter &p, const QRect &surface_rect, const Q
     alert_bottom_adjustment = 5;
     txtColor = QColor(255, 255, 255, 255);
   } else {
-    font = InterFont(48, QFont::Bold);
+    font = InterFont(60, QFont::Bold);
     alert_bottom_adjustment = 7;
     txtColor = pulseElement(e2eAlertFrame) ? QColor(255, 255, 255, 255) : QColor(0, 255, 0, 190);
   }
