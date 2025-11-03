@@ -1768,12 +1768,20 @@ Warning: You are on a metered connection!</source>
 <context>
     <name>TeslaSettings</name>
     <message>
-        <source>Cooperative Steering</source>
+        <source>Cooperative Steering (Beta)</source>
         <translation>合作转向（测试功能）</translation>
     </message>
     <message>
-        <source>Allows the driver to provide limited steering input while openpilot is engaged. Only works above %1 %2.</source>
-        <translation>允许驾驶员在启用 openpilot 时提供有限的转向控制。仅在车速超过 %1 %2 时有效。</translation>
+        <source>Warning: May experience steering oscillations below %5 %6 during turns, recommend disabling this feature if you experience these.</source>
+        <translation>警告：转弯时可能会遇到低于 %5 %6 的转向振荡，如果遇到这些情况，建议禁用此功能。</translation>
+    </message>
+    <message>
+        <source>Allows the driver to provide limited steering input while openpilot is engaged.</source>
+        <translation>允许驾驶员在启用 openpilot 时提供有限的转向控制。</translation>
+    </message>
+    <message>
+        <source>Only works above %4 %6.</source>
+        <translation>仅在车速超过 %4 %6 时有效。</translation>
     </message>
 </context>
 <context>
@@ -2524,8 +2532,8 @@ Data</source>
         <translation>重新进入sunnylink面板确认赞助状态</translation>
     </message>
     <message>
-        <source>If sponsorship status was not updated, please contact a moderator on Discord at https://discord.gg/sunnypilot</source>
-        <translation>如果赞助状态没有更新，请联系Discord的管理员，网址为https://discord.gg/sunnypilot</translation>
+        <source>If sponsorship status was not updated, please contact a moderator on our forum at https://community.sunnypilot.ai</source>
+        <translation>如果赞助状态没有更新，请联系社区管理员，网址为https://community.sunnypilot.ai</translation>
     </message>
     <message>
         <source>Scan the QR code to visit sunnyhaibin&apos;s GitHub Sponsors page</source>
@@ -2536,8 +2544,8 @@ Data</source>
         <translation>选择您的赞助级别并确认您的支持</translation>
     </message>
     <message>
-        <source>Join our community on Discord at https://discord.gg/sunnypilot and reach out to a moderator to confirm your sponsor status</source>
-        <translation>在Discord上加入我们的社区https://discord.gg/sunnypilot并联系主持人确认您的赞助者身份</translation>
+        <source>Join our Community Forum at https://community.sunnypilot.ai and reach out to a moderator if you have issues</source>
+        <translation>加入我们的社区https://discord.gg/sunnypilot并联系管理员确认赞助者身份</translation>
     </message>
     <message>
         <source>Pair your GitHub account</source>
@@ -2565,6 +2573,17 @@ Data</source>
     <message>
         <source>You must accept the Terms and Conditions to use sunnypilot. Read the latest terms at &lt;span style=&apos;color: #465BEA;&apos;&gt;https://comma.ai/terms&lt;/span&gt; before continuing.</source>
         <translation>您必须接受《条款与条件》才能使用 sunnypilot。在继续之前，请先阅读最新条款：&lt;span style=&apos;color: #465BEA;&apos;&gt;https://comma.ai/terms&lt;/span&gt;。</translation>
+    </message>
+</context>
+<context>
+    <name>SunnylinkCommunityPopup</name>
+    <message>
+        <source>Scan the QR code and join us!</source>
+        <translation>扫描二维码，加入我们！</translation>
+    </message>
+    <message>
+        <source>Join the sunnypilot Community Forum</source>
+        <translation>加入 sunnypilot 社区论坛</translation>
     </message>
 </context>
 <context>
@@ -2907,12 +2926,16 @@ Bottom</source>
 <context>
     <name>WiFiPromptWidget</name>
     <message>
-        <source>Open</source>
-        <translation>开启</translation>
+        <source>sunnypilot Community</source>
+        <translation>sunnypilot 社区</translation>
     </message>
     <message>
-        <source>Maximize your training data uploads to improve openpilot&apos;s driving models.</source>
-        <translation>最大化您的训练数据上传，以改善 openpilot 的驾驶模型。</translation>
+        <source>Need help or have ideas?&lt;br&gt;&lt;b&gt;Join&lt;/b&gt; our community now!</source>
+        <translation>需要帮助或有想法？&lt;br&gt;&lt;b&gt;立即加入&lt;/b&gt;我们的社区！</translation>
+    </message>
+    <message>
+        <source>Learn More</source>
+        <translation>了解更多</translation>
     </message>
     <message>
         <source>&lt;span style=&apos;font-family: &quot;Noto Color Emoji&quot;;&apos;&gt;🔥&lt;/span&gt; Firehose Mode &lt;span style=&apos;font-family: Noto Color Emoji;&apos;&gt;🔥&lt;/span&gt;</source>
