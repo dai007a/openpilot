@@ -38,6 +38,7 @@ private:
   void drawSetSpeedSP(QPainter &p, const QRect &surface_rect);
   void drawE2eAlert(QPainter &p, const QRect &surface_rect, const QString &alert_alt_text = "");
   void drawCurrentSpeedSP(QPainter &p, const QRect &surface_rect);
+  void drawDriverCameraOnTurn(QPainter &p, const QRect &surface_rect);
   void drawBlinker(QPainter &p, const QRect &surface_rect);
 
   bool lead_status;
@@ -116,6 +117,8 @@ private:
   int blinkerFrameCounter;
   int lastBlinkerStatus;
   bool showTurnSignals;
+  bool showDriverCameraOnTurn;
+  bool driverCameraDialogOpen = false;
 
   bool carControlEnabled;
   float speedCluster = 0;
