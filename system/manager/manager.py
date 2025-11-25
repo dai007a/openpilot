@@ -17,7 +17,7 @@ from openpilot.system.manager.process import ensure_running
 from openpilot.system.manager.process_config import managed_processes
 from openpilot.system.athena.registration import register, UNREGISTERED_DONGLE_ID
 from openpilot.common.swaglog import cloudlog, add_file_handler
-from openpilot.system.version import get_build_metadata, terms_version, training_version
+from openpilot.system.version import get_build_metadata
 from openpilot.system.hardware.hw import Paths
 
 
@@ -58,8 +58,6 @@ def manager_init() -> None:
   # set params
   serial = HARDWARE.get_serial()
   params.put("Version", build_metadata.openpilot.version)
-  params.put("TermsVersion", terms_version)
-  params.put("TrainingVersion", training_version)
   params.put("GitCommit", build_metadata.openpilot.git_commit)
   params.put("GitCommitDate", build_metadata.openpilot.git_commit_date)
   params.put("GitBranch", build_metadata.channel)
@@ -67,6 +65,7 @@ def manager_init() -> None:
   params.put_bool("IsDevelopmentBranch", build_metadata.development_channel)
   params.put_bool("IsTestedBranch", build_metadata.tested_channel)
   params.put_bool("IsReleaseBranch", build_metadata.release_channel)
+  params.put_bool("IsReleaseSpBranch", build_metadata.release_sp_channel)
   params.put("HardwareSerial", serial)
 
   # set dongle id
