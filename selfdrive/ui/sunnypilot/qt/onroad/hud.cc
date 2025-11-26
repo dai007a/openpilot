@@ -27,7 +27,6 @@ void HudRendererSP::updateState(const UIState &s) {
   devUiInfo = s.scene.dev_ui_info;
   roadName = s.scene.road_name;
   showTurnSignals = s.scene.turn_signals;
-  showDriverCameraOnTurn = s.scene.show_driver_camera_on_turn;
   speedLimitMode = static_cast<SpeedLimitMode>(s.scene.speed_limit_mode);
   speedUnit = is_metric ? tr("km/h") : tr("mph");
   standstillTimer = s.scene.standstill_timer;
@@ -294,54 +293,9 @@ void HudRendererSP::draw(QPainter &p, const QRect &surface_rect) {
     if (showTurnSignals) {
       drawBlinker(p, surface_rect);
     }
-
-    // Driver Camera on Turn Signal
-    if (showDriverCameraOnTurn) {
-      drawDriverCameraOnTurn(p, surface_rect);
-    }
   }
 
   p.restore();
-}
-
-void HudRendererSP::drawDriverCameraOnTurn(QPainter &p, const QRect &surface_rect) {
-  // 如果转向灯关闭，关闭driver camera显示
-  if (!leftBlinkerOn && !rightBlinkerOn) {
-    if (driverCameraDialogOpen) {
-      driverCameraDialogOpen = false;
-      return;
-    }
-  }
-
-  // 如果转向灯开启，显示driver camera画面
-  if ((leftBlinkerOn || rightBlinkerOn) && !driverCameraDialogOpen) {
-    driverCameraDialogOpen = true;
-
-    // 使用与DriverCameraDialog相同的尺寸逻辑
-    const float driver_view_ratio = 2.0f;
-
-    // 计算显示尺寸 - 基于固定比例
-    const int target_height = static_cast<int>(surface_rect.height() * 0.3f); // 占屏幕高度的30%
-    const int target_width = static_cast<int>(target_height * driver_view_ratio);
-
-    // 计算显示位置（位于屏幕中央上部）
-    const int xPos = (surface_rect.width() - target_width) / 2;
-    const int yPos = static_cast<int>(surface_rect.height() * 0.05f); // 距离顶部5%的位置
-
-    // 创建显示区域矩形
-    QRect driver_camera_rect(xPos, yPos, target_width, target_height);
-
-    // **关键修改：使用 () 调用 scene() 函数**
-    const auto current_scene = uiState->scene();
-    if (current_scene && current_scene->driver_view_img) {
-      p.drawImage(driver_camera_rect, *current_scene->driver_view_img);
-    } else {
-      // 临时占位：显示白色边框和文字
-      p.setPen(Qt::white);
-      p.drawRect(driver_camera_rect);
-      p.drawText(driver_camera_rect, Qt::AlignCenter, "Driver Camera");
-    }
-  }
 }
 
 void HudRendererSP::drawText(QPainter &p, int x, int y, const QString &text, QColor color) {

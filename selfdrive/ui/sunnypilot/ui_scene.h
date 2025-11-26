@@ -18,8 +18,6 @@ typedef struct UISceneSP : UIScene {
   bool trueVEgoUI;
   bool hideVEgoUI;
   bool turn_signals = false;
-  bool show_driver_camera_on_turn = false;
-  QImage *driver_view_img = nullptr;
   int chevron_info;
   bool blindspot_ui;
   bool rainbow_mode;
