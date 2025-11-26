@@ -194,11 +194,6 @@ env = Environment(
     "#third_party/acados/include/hpipm/include",
     "#third_party/catch2/include",
     "#third_party/libyuv/include",
-    "#third_party/json11",
-    "#third_party/linux/include",
-    "#third_party/snpe/include",
-    "#third_party",
-    "#msgq",
   ],
 
   CC='clang',
@@ -223,18 +218,43 @@ env = Environment(
   toolpath=["#site_scons/site_tools", "#rednose_repo/site_scons/site_tools"],
 )
 
-if arch == "Darwin":
-  # RPATH is not supported on macOS, instead use the linker flags
-  darwin_rpath_link_flags = [f"-Wl,-rpath,{path}" for path in env["RPATH"]]
-  env["LINKFLAGS"] += darwin_rpath_link_flags
+# Arch-specific flags and paths
+if arch == "larch64":
+  env.Append(CPPPATH=["#third_party/opencl/include"])
+  env.Append(LIBPATH=[
+    "/usr/local/lib",
+    "/system/vendor/lib64",
+    "/usr/lib/aarch64-linux-gnu",
+  ])
+  arch_flags = ["-D__TICI__", "-mcpu=cortex-a57", "-DQCOM2"]
+  env.Append(CCFLAGS=arch_flags)
+  env.Append(CXXFLAGS=arch_flags)
+elif arch == "Darwin":
+  env.Append(LIBPATH=[
+    f"{brew_prefix}/lib",
+    f"{brew_prefix}/opt/openssl@3.0/lib",
+    f"{brew_prefix}/opt/llvm/lib/c++",
+    "/System/Library/Frameworks/OpenGL.framework/Libraries",
+  ])
+  env.Append(CCFLAGS=["-DGL_SILENCE_DEPRECATION"])
+  env.Append(CXXFLAGS=["-DGL_SILENCE_DEPRECATION"])
+  env.Append(CPPPATH=[
+    f"{brew_prefix}/include",
+    f"{brew_prefix}/opt/openssl@3.0/include",
+  ])
+else:
+  env.Append(LIBPATH=[
+    "/usr/lib",
+    "/usr/local/lib",
+  ])
 
-env.CompilationDatabase('compile_commands.json')
-
-# Setup cache dir
-default_cache_dir = '/data/scons_cache' if AGNOS else '/tmp/scons_cache'
-cache_dir = ARGUMENTS.get('cache_dir', default_cache_dir)
-CacheDir(cache_dir)
-Clean(["."], cache_dir)
+# Sanitizers and extra CCFLAGS from CLI
+if GetOption('asan'):
+  env.Append(CCFLAGS=["-fsanitize=address", "-fno-omit-frame-pointer"])
+  env.Append(LINKFLAGS=["-fsanitize=address"])
+elif GetOption('ubsan'):
+  env.Append(CCFLAGS=["-fsanitize=undefined"])
+  env.Append(LINKFLAGS=["-fsanitize=undefined"])
 
 node_interval = 5
 node_count = 0
