@@ -155,6 +155,7 @@ void HudRendererSP::updateState(const UIState &s) {
 
   leftBlinkerOn = car_state.getLeftBlinker();
   rightBlinkerOn = car_state.getRightBlinker();
+  showDriverCameraOnTurnSignal = s.scene.driver_camera_on_turn_signal;
   leftBlindspot = car_state.getLeftBlindspot();
   rightBlindspot = car_state.getRightBlindspot();
 
@@ -292,6 +293,13 @@ void HudRendererSP::draw(QPainter &p, const QRect &surface_rect) {
     // Blinker
     if (showTurnSignals) {
       drawBlinker(p, surface_rect);
+    }
+
+    // 绘制驾驶员摄像头
+    if (showDriverCameraOnTurnSignal && (leftBlinkerOn || rightBlinkerOn)) {
+      if (driverCameraWidget != nullptr) {
+        driverCameraWidget->setStreamType(VISION_STREAM_DRIVER);
+      }
     }
   }
 

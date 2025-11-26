@@ -90,6 +90,13 @@ VisualsPanel::VisualsPanel(QWidget *parent) : QWidget(parent) {
       "",
       false,
     },
+    {
+      "ShowDriverCameraOnTurnSignal",
+      tr("Show Driver Camera on Turn Signal"),
+      tr("When enabled, the driver camera video is shown when turn signals are active."),
+      "",
+      false,
+    },
   };
 
   // Add regular toggles first
