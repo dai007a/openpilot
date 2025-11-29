@@ -8,7 +8,6 @@
 #pragma once
 
 #include "selfdrive/ui/qt/onroad/hud.h"
-#include "selfdrive/ui/qt/widgets/cameraview.h"
 #include "selfdrive/ui/sunnypilot/qt/offroad/settings/longitudinal/speed_limit/helpers.h"
 #include "selfdrive/ui/sunnypilot/qt/onroad/developer_ui/developer_ui.h"
 
@@ -112,7 +111,6 @@ private:
   bool hideVEgoUI;
   bool leftBlinkerOn;
   bool rightBlinkerOn;
-  bool showDriverCameraOnTurnSignal;
   bool leftBlindspot;
   bool rightBlindspot;
   int blinkerFrameCounter;
@@ -123,5 +121,4 @@ private:
   float speedCluster = 0;
   int icbm_active_counter = 0;
   bool pcmCruiseSpeed = true;
-  CameraWidget* driverCameraWidget;
 };
