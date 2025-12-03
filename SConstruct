@@ -362,6 +362,7 @@ SConscript([
 if arch != "Darwin":
   SConscript([
     'system/logcatd/SConscript',
+    'system/proclogd/SConscript',
   ])
 
 if arch == "larch64":
